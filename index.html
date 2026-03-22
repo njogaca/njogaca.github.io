@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Garcia | Integration Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Network Background Canvas -->
+    <canvas id="networkCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">JG<span class="logo-dot">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Johan Fernando<br>Garcia Casas</h1>
+            <div class="hero-title-wrapper">
+                <span class="hero-title-line"></span>
+                <p class="hero-title">Integration Engineer</p>
+                <span class="hero-title-line"></span>
+            </div>
+            <p class="hero-summary">8+ years building middleware solutions for Tier-1 banks processing 500K+ daily transactions. Currently expanding into cloud-native architectures.</p>
+            <div class="work-auth">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Authorized to work in the United States</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="Resume_JohanGarcia.pdf" download class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -2px; margin-right: 6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Resume
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/njogaca/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/njogaca" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p>My journey started in Colombia, where I cut my teeth on COBOL mainframes and AS400 migrations — learning the value of systems that simply cannot fail. From there, I moved into IBM middleware, spending nearly three years at IBM itself, where I designed integration architectures and mentored development teams.</p>
+                    <p>I've worked across the full integration stack: message queues, service registries, API gateways, and ESBs. My sweet spot is translating complex business requirements into reliable, scalable middleware solutions that banks trust with millions of transactions.</p>
+                    <p>Now based in Atlanta, I'm bridging my deep enterprise background with cloud-native technologies — containerizing workloads with Docker and OpenShift, and building CI/CD pipelines that modernize how integration services are delivered.</p>
+                </div>
+                <div class="about-highlights fade-in">
+                    <div class="highlight-card">
+                        <span class="highlight-number">8+</span>
+                        <span class="highlight-label">Years Experience</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">500K+</span>
+                        <span class="highlight-label">Daily Transactions</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">Tier-1</span>
+                        <span class="highlight-label">Banking Clients</span>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="thought-bubble">
+                            <div class="thought-item">
+                                <span class="thought-flag">🇪🇸</span>
+                                <span>Spanish</span>
+                                <span class="thought-level">Native</span>
+                            </div>
+                            <div class="thought-item">
+                                <span class="thought-flag">🇺🇸</span>
+                                <span>English</span>
+                                <span class="thought-level">Advanced</span>
+                            </div>
+                        </div>
+                        <span class="highlight-number">2</span>
+                        <span class="highlight-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-track" id="timelineTrack"></div>
+                <div class="timeline-progress" id="timelineProgress"></div>
+
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-node">
+                        <div class="node-ring"></div>
+                        <span class="node-year">2023</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="card-info">
+                                <h3>Operations Manager</h3>
+                                <span class="card-company">Belen de la Cruz Empanadas and Pastries</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-date">Nov 2023 — Present</span>
+                                <span class="card-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>Led process optimization initiatives for a food service business, applying data-driven inventory management and supply chain improvements.</li>
+                                <li>Managed daily operations during U.S. relocation transition.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-node">
+                        <div class="node-ring"></div>
+                        <span class="node-year">2021</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="card-info">
+                                <h3>Integration Developer</h3>
+                                <span class="card-company">PRAGMA S.A.</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-date">May 2021 — Jan 2022</span>
+                                <span class="card-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>Strategically developed and migrated services from IBM Integration Bus (IIB v10) to IBM App Connect Enterprise (ACE).</li>
+                                <li>Extensive use of Docker for containerization and OpenShift for cloud-based deployment.</li>
+                                <li>Implemented CI/CD pipelines using Azure DevOps and GitHub.</li>
+                                <li>Managed and configured IBM DataPower and WSRR Registry for efficient service exposure.</li>
+                            </ul>
+                            <div class="card-tags">
+                                <span>IIB</span><span>ACE</span><span>Docker</span><span>OpenShift</span><span>Azure DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2019">
+                    <div class="timeline-node">
+                        <div class="node-ring"></div>
+                        <span class="node-year">2019</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="card-info">
+                                <h3>Expert Engineer 3</h3>
+                                <span class="card-company">SOPHOS SOLUTIONS S.A.S</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-date">Nov 2019 — May 2021</span>
+                                <span class="card-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>Developed integration solutions using IBM Integration Bus (IIB) versions 9 and 10.</li>
+                                <li>Managed and configured IBM MQ for robust inter-service communication.</li>
+                                <li>Implemented services utilizing SOAP, REST, TCP/IP, and JMS protocols.</li>
+                                <li>Administered IBM DataPower and WSRR Registry to optimize service lifecycle management.</li>
+                            </ul>
+                            <div class="card-tags">
+                                <span>IIB</span><span>IBM MQ</span><span>DataPower</span><span>SOAP</span><span>REST</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item active" data-year="2017">
+                    <div class="timeline-node">
+                        <div class="node-ring"></div>
+                        <span class="node-year">2017</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="card-info">
+                                <h3>Application Programmer</h3>
+                                <span class="card-company">IBM</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-date">Feb 2017 — Nov 2019</span>
+                                <span class="card-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>Advanced design and development of integration services using IBM Integration Bus (IIB) versions 9 and 10.</li>
+                                <li>Effective implementation of MQ queues and exposure of services via SOAP, REST, TCP/IP, and JMS.</li>
+                                <li>Trained and mentored junior developers, facilitating effective knowledge transfer.</li>
+                                <li>Led multidisciplinary teams in complex integration projects.</li>
+                                <li>Designed integration architectures aligned with industry best practices.</li>
+                            </ul>
+                            <div class="card-tags">
+                                <span>IIB</span><span>IBM MQ</span><span>DataPower</span><span>WSRR</span><span>Team Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2014">
+                    <div class="timeline-node">
+                        <div class="node-ring"></div>
+                        <span class="node-year">2014</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="card-info">
+                                <h3>Software Analyst</h3>
+                                <span class="card-company">FASOFTCOL E.U</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-date">Mar 2014 — Nov 2016</span>
+                                <span class="card-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <ul>
+                                <li>Developed and maintained COBOL applications, migrating systems from AS400 to COBOL Batch.</li>
+                                <li>Designed and executed JCL scripts for batch processes, optimizing automation.</li>
+                                <li>Developed ETL processes for mass loading of flat files into DB2 databases.</li>
+                                <li>Provided technical support during installation and validation in QA and production environments.</li>
+                            </ul>
+                            <div class="card-tags">
+                                <span>COBOL</span><span>AS400</span><span>JCL</span><span>DB2</span><span>ETL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category fade-in">
+                    <h3>Expert</h3>
+                    <div class="skill-list">
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">IBM WebSphere MQ</span>
+                            <!-- IBM MQ: message queue arrows -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M64 8L14 36v56l50 28 50-28V36L64 8zm0 10l40 22v45L64 108 24 85V40l40-22z"/><path d="M44 55h40v6H44zm0 12h40v6H44z"/><polygon points="90,64 100,58 100,70"/><polygon points="38,64 28,58 28,70"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">IBM Integration Bus (IIB)</span>
+                            <!-- IIB: integration flow/bus -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M64 8L14 36v56l50 28 50-28V36L64 8zm0 10l40 22v45L64 108 24 85V40l40-22z"/><circle cx="40" cy="50" r="6"/><circle cx="88" cy="50" r="6"/><circle cx="40" cy="78" r="6"/><circle cx="88" cy="78" r="6"/><circle cx="64" cy="64" r="8"/><line x1="46" y1="50" x2="56" y2="64" stroke="currentColor" stroke-width="3" fill="none"/><line x1="82" y1="50" x2="72" y2="64" stroke="currentColor" stroke-width="3" fill="none"/><line x1="46" y1="78" x2="56" y2="64" stroke="currentColor" stroke-width="3" fill="none"/><line x1="82" y1="78" x2="72" y2="64" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">WebSphere Service Registry (WSRR)</span>
+                            <!-- WSRR: registry/catalog -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M64 8L14 36v56l50 28 50-28V36L64 8zm0 10l40 22v45L64 108 24 85V40l40-22z"/><rect x="42" y="44" width="44" height="8" rx="2"/><rect x="42" y="58" width="44" height="8" rx="2"/><rect x="42" y="72" width="44" height="8" rx="2"/><circle cx="48" cy="48" r="2" fill="var(--bg-card)"/><circle cx="48" cy="62" r="2" fill="var(--bg-card)"/><circle cx="48" cy="76" r="2" fill="var(--bg-card)"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">IBM DataPower Gateway</span>
+                            <!-- DataPower: shield/gateway -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M64 8L14 36v56l50 28 50-28V36L64 8zm0 10l40 22v45L64 108 24 85V40l40-22z"/><path d="M64 40L44 52v24l20 12 20-12V52L64 40z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M54 64l6 6 14-14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Proficient</h3>
+                    <div class="skill-list">
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Java</span>
+                            <!-- Java: coffee cup -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M47 12c0 0 3 8-4 14s-12 8-8 18c0 0-8-5 0-14s12-10 12-18z"/><path d="M62 6c0 0 3 8-4 14s-12 8-8 18c0 0-8-5 0-14s12-10 12-18z"/><path d="M34 48h52v8c0 22-12 34-26 34S34 78 34 56V48z"/><path d="M86 54h10c6 0 10 4 10 10s-4 10-10 10H86"/><path d="M38 100h44c0 0 4 0 4 4v4H34v-4c0-4 4-4 4-4z"/><rect x="30" y="108" width="60" height="6" rx="2"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">SQL</span>
+                            <!-- SQL: database cylinder -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><ellipse cx="64" cy="30" rx="38" ry="14"/><path d="M26 30v68c0 7.7 17 14 38 14s38-6.3 38-14V30" fill="none" stroke="currentColor" stroke-width="5"/><ellipse cx="64" cy="30" rx="38" ry="14" fill="none" stroke="currentColor" stroke-width="5"/><path d="M26 58c0 7.7 17 14 38 14s38-6.3 38-14" fill="none" stroke="currentColor" stroke-width="4"/><path d="M26 80c0 7.7 17 14 38 14s38-6.3 38-14" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">COBOL</span>
+                            <!-- COBOL: mainframe terminal -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><rect x="20" y="16" width="88" height="68" rx="6" fill="none" stroke="currentColor" stroke-width="5"/><rect x="28" y="24" width="72" height="48" rx="2"/><path d="M36 40h20" stroke="var(--bg-card)" stroke-width="3"/><path d="M36 48h30" stroke="var(--bg-card)" stroke-width="3"/><path d="M36 56h14" stroke="var(--bg-card)" stroke-width="3"/><rect x="48" y="88" width="32" height="6" rx="1"/><rect x="36" y="96" width="56" height="8" rx="2"/><line x1="64" y1="84" x2="64" y2="88" stroke="currentColor" stroke-width="5"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Git</span>
+                            <!-- Git: branch logo -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M120.1 63.2L64.8 7.9c-2.3-2.3-6-2.3-8.3 0l-11.5 11.5 14.5 14.5c3.4-1.2 7.3-.4 10 2.3 2.7 2.7 3.5 6.7 2.2 10.1l14 14c3.4-1.3 7.4-.5 10.1 2.2 3.8 3.8 3.8 9.9 0 13.7-3.8 3.8-9.9 3.8-13.7 0-2.9-2.9-3.6-7.2-2-10.8L67 52.3v34c.9.5 1.8 1.1 2.5 1.8 3.8 3.8 3.8 9.9 0 13.7-3.8 3.8-9.9 3.8-13.7 0-3.8-3.8-3.8-9.9 0-13.7.9-.9 2-1.6 3.2-2.1V51.5c-1.2-.5-2.3-1.2-3.2-2.1-2.9-2.9-3.6-7.1-2.1-10.7L39.5 24.5 7.9 56.1c-2.3 2.3-2.3 6 0 8.3l55.3 55.3c2.3 2.3 6 2.3 8.3 0l48.6-48.6c2.3-2.2 2.3-5.9 0-8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Working Knowledge</h3>
+                    <div class="skill-list">
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Python</span>
+                            <!-- Python: snake logo -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M63.4 8C37.8 8 39.4 19.4 39.4 19.4l.1 11.8h24.4v3.5H28.1S8 31.7 8 57.5s17.6 24.9 17.6 24.9h10.5V70.6s-.6-17.6 17.3-17.6h24.2s16.8.3 16.8-16.2V19.6S96.8 8 63.4 8zM47.2 16.4c3 0 5.4 2.4 5.4 5.4s-2.4 5.4-5.4 5.4-5.4-2.4-5.4-5.4 2.4-5.4 5.4-5.4z"/><path d="M64.6 120c25.6 0 24-11.4 24-11.4l-.1-11.8H64.1v-3.5h35.8S120 96.3 120 70.5s-17.6-24.9-17.6-24.9H91.9v11.8s.6 17.6-17.3 17.6H50.4s-16.8-.3-16.8 16.2v17.2S31.2 120 64.6 120zm16.2-8.4c-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4 5.4 2.4 5.4 5.4-2.4 5.4-5.4 5.4z"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Docker</span>
+                            <!-- Docker: whale with containers -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.3-3.8 8.9-3.4 13.1.4 3.1 1.4 6.3 3.5 8.8-1.6.9-3.4 1.7-5 2.2-3.4 1.2-7 1.8-10.7 1.8H1.4l-.2 2c-.6 8.3 1.3 16.5 5.2 23.4l.1.2c7 11.3 18.3 16.5 31.3 16.5 26.5 0 48-11 62-36.6 5.4.3 11.3-1.2 14.8-5.8l.7-1.1-1.5-.5zM29 56H18v11h11V56zm13.8 0H31.9v11h10.9V56zm13.8 0H45.7v11h10.9V56zm13.9 0H59.6v11h10.9V56zM45.7 43.2H34.8v11h10.9V43.2zm13.8 0H48.6v11h10.9V43.2zm13.9 0H62.5v11h10.9V43.2zm0-12.8H62.5v11h10.9V30.4z"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Kubernetes</span>
+                            <!-- Kubernetes: helm wheel -->
+                            <svg class="skill-icon" viewBox="0 0 32 32" fill="currentColor" stroke="none"><path d="M16 2.3l-1.3.8-4.4 2.5-.2.1-1.3.8-.1.2-.5 5-.1.8-4 3.2-.7.5.3.8 1.8 4.7.1.2 1 1h.2l5 .4h.9l2.5 4.3.5.7h.9l5.1-.1h.2l1-.9.1-.2 2.4-4.3.8-.1 5-.5h.2l1-1 .1-.2 1.7-4.8.2-.8-.7-.5-3.9-3.1 0-.9-.6-5-.1-.2-1.3-.7-.2-.1L17.3 3 16 2.3zm0 3.3l3.5 2 .4 4-.1.2-2.4 3.2h-.1l-3.8.1h-.2l-2.5-3.1V12l.5-4 3.5-2v-.1l1.1-.3zm-5.3 11l2.6 1.5-.6 2.6-3.1 1.3-2.1-2.3 1-2.7 2.2-.4zm10.7 0l2.1.4 1 2.8-2.1 2.2-3-1.3-.6-2.6 2.6-1.5zm-8.2 5.1l2.7.5.7.6-1 2.7h-.1l-2.8-.1-.9-1.1 1.4-2.6zm5.7 0l1.4 2.6-.9 1.1-2.8.1h-.1l-1-2.7.7-.6 2.7-.5z"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">OpenShift</span>
+                            <!-- OpenShift: hat logo -->
+                            <svg class="skill-icon" viewBox="0 0 128 128" fill="currentColor" stroke="none"><path d="M38.4 62.2c-.5 2.2-.8 4.5-.8 6.8 0 14.1 9.7 26 22.8 29.2l9.5-7.2c-13.5-.5-24.3-9.3-27.8-21.8l-3.7-7z"/><path d="M23.8 73.4l-9.3 7.1c4.2 13.7 15 24.4 28.5 28.9l9.5-7.2c-13.1-3-23.6-13-28.7-28.8z"/><path d="M90 46c-5.3-8.3-13.8-14.3-23.7-16.4L56.9 36.8c10.1 1.2 18.8 7.6 23.8 16.9L90 46z"/><path d="M104.2 54.6L94.9 61.7c2.6 5.8 4 12.2 4 18.9 0 2-.1 3.9-.4 5.8l9.6-7.3c.1-1.5.2-3 .2-4.5.1-5.2-.7-10.3-2-15l-2.1-4.6z"/><path d="M64 12C35.3 12 12 35.3 12 64s23.3 52 52 52 52-23.3 52-52S92.7 12 64 12z" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+                        </div>
+                        <div class="skill-badge">
+                            <span class="skill-dot"></span>
+                            <span class="skill-name">Linux</span>
+                            <!-- Linux: Tux penguin -->
+                            <svg class="skill-icon" viewBox="0 0 32 32" fill="currentColor" stroke="none"><path d="M16 3C13 3 11 6.5 11 10c0 1.5.3 2.9.8 4.1C9.5 15.5 7 18 7 21c0 2 1.5 3.5 3.5 4.5S14.5 27 16 27s3.5-.5 5.5-1.5S25 23 25 21c0-3-2.5-5.5-4.8-6.9.5-1.2.8-2.6.8-4.1C21 6.5 19 3 16 3zm-2.5 6c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S12 11.3 12 10.5 12.7 9 13.5 9zm5 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S17 11.3 17 10.5 17.7 9 18.5 9zM14 14h4c0 0-.5 2.5-2 2.5S14 14 14 14zm-4.5 14C9 28 8 28.5 8 29.5S9 31 10 31h3v-3h-3.5zm9 0V31h3c1 0 2-.5 2-1.5S23 28 22.5 28h-4z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+                    </div>
+                    <h3>Software Engineer</h3>
+                    <p class="education-school">Universidad Central de Colombia</p>
+                    <p class="education-location">Bogota, Colombia</p>
+                    <span class="education-date">2011 — 2018</span>
+                </div>
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3>AWS Technical Professional</h3>
+                    <p class="education-school">Amazon Web Services</p>
+                    <p class="education-location">Online</p>
+                    <span class="education-date">2021</span>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Certifications — Platzi</h3>
+            <div class="certs-grid fade-in">
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Automation with n8n</span>
+                    <span class="cert-date">Oct 2025</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Python: Comprehensions, Functions & Error Handling</span>
+                    <span class="cert-date">Sep 2025</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Docker: Fundamentals</span>
+                    <span class="cert-date">May 2025</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">OOP & Algorithms with Python</span>
+                    <span class="cert-date">Jan 2023</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Object-Oriented Programming</span>
+                    <span class="cert-date">Jan 2023</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Python Fundamentals</span>
+                    <span class="cert-date">Nov 2022</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Python: PIP & Virtual Environments</span>
+                    <span class="cert-date">Nov 2022</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Python Basics</span>
+                    <span class="cert-date">Mar 2022</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Professional Git & GitHub</span>
+                    <span class="cert-date">Jan 2022</span>
+                </div>
+                <div class="cert-item">
+                    <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span class="cert-name">Introduction to Terminal & Command Line</span>
+                    <span class="cert-date">Dec 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-intro">I'm open to new opportunities in integration engineering and cloud-native development. Let's connect!</p>
+            <div class="contact-grid">
+                <a href="mailto:jfgc1394@gmail.com" class="contact-card fade-in">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">jfgc1394@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/njogaca/" target="_blank" rel="noopener" class="contact-card fade-in">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/njogaca</span>
+                </a>
+                <a href="https://github.com/njogaca" target="_blank" rel="noopener" class="contact-card fade-in">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/njogaca</span>
+                </a>
+                <a href="tel:+19546756464" class="contact-card fade-in">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(+1) 954-675-6464</span>
+                </a>
+                <div class="contact-card fade-in">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Atlanta Metro Area, GA, USA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Johan Fernando Garcia Casas &nbsp;|&nbsp; Powered by <a href="https://claude.ai/claude-code" target="_blank" rel="noopener" class="footer-link">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
