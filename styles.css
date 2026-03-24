@@ -502,6 +502,14 @@ ul { list-style: none; }
 
 .thought-flag {
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.thought-flag svg {
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 .thought-level {
